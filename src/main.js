@@ -28,7 +28,7 @@ routes : [
   { path: '/', name: 'Home', component: require('./components/Home/Home').default },
   { path: '/projects', name: 'Projects' , component: require('./components/UnderConstruction').default},
   { path: '/blog', name: 'Blog' ,component: require('./components/UnderConstruction').default},
-  { path: '/thesis', name: 'These' ,component: require('./components/UnderConstruction').default},
+  { path: '/thesis', name: 'Thesis' ,component: require('./components/UnderConstruction').default},
   { path: '/contact', name: 'Contact' ,component: require('./components/UnderConstruction').default}
 ]
 })

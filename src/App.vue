@@ -4,8 +4,8 @@
         <nav class="fixed-top">
           <a @mouseover="brand_hover=true" @mouseleave="brand_hover=false">
            <router-link to='/' exact>
-           <img v-show="!brand_hover" style="vertical-align: middle; width:1.75rem;height:1.75rem;" v-bind:src="brand_image"/>
-           <img v-show="brand_hover" style="vertical-align: middle; width:1.75rem;height:1.75rem;" v-bind:src="brand_image_on_hover"/>
+           <img v-show="!brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image"/>
+           <img v-show="brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image_on_hover"/>
            <strong> Home </strong> 
            </router-link>
           </a>
@@ -25,8 +25,8 @@
             <a @mouseover="brand_hover=true" @mouseleave="brand_hover=false" href="https://marvinh.github.io/portfolio/" class="nav-item-alt"> 
               <figure>
                 <strong> Marvin Harootoonyan, Software Engineer </strong>
-                <img  v-show="!brand_hover" style="vertical-align: middle; width:1.75rem;height:1.75rem;" v-bind:src="brand_image"/>
-                <img  v-show="brand_hover" style="vertical-align: middle; width:1.75rem;height:1.75rem;" v-bind:src="brand_image_on_hover"/>
+                <img  v-show="!brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image"/>
+                <img  v-show="brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image_on_hover"/>
                 <font-awesome-icon icon="desktop"/>
               </figure> 
             </a>
@@ -35,7 +35,7 @@
             <a class="nav-item-alt" href="https://www.csun.edu/engineering-computer-science/computer-science/bachelor-science-degree-computer-science">
             <figure>
                 <strong class="nav-item-alt"> B.S. in Computer Science </strong>
-                <img style="vertical-align: middle;width:1.75rem;height:1.75rem;" src="./assets/Csun-seal.svg"/>  &nbsp;&nbsp;
+                <img style="vertical-align: middle;width:1.33em;height:1.33em;" src="./assets/Csun-seal.svg"/>  &nbsp;&nbsp;
                 <font-awesome-icon style="color: green" icon="check"/>
                 <strong style="color:green" class="nav-item-alt"> Complete </strong>  
             </figure> 
@@ -45,7 +45,7 @@
             <a  href="https://catalog.csun.edu/academics/comp/programs/ms-computer-science/">
             <figure>
               <strong > M.S. in Computer Science </strong>
-              <img style="vertical-align: middle;width:1.75rem;height:1.75rem;" src="./assets/Csun-seal.svg"/> &nbsp;
+              <img style="vertical-align: middle;width:1.33em;height:1.33em;" src="./assets/Csun-seal.svg"/> &nbsp;
               <font-awesome-icon style="color: #D84F4E" class="rotating" icon="spinner"/> &nbsp;
               <strong style="color:#D84F4E"  class="nav-item-alt"> In Progress </strong>  
             </figure>
@@ -97,6 +97,7 @@ export default {
 
 
 a{
+  font-size: 1.1rem;
   color :  #171E22 ! important;
   text-decoration: none;
 }
@@ -136,12 +137,12 @@ a:hover{
 }
 
 footer {
-  padding-top: 20vh;
+  padding-top: 40vh;
  
 }
 
 header{
-  padding-bottom: 0vh;
+  padding-bottom: 10vh;
 }
 
 ul{

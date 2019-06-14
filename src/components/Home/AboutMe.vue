@@ -52,6 +52,7 @@ a {
 }
 h5 {
   padding-bottom: 2vh;
+  font-size: 1rem;
 }
 strong {
   color : #171E22 ! important;
@@ -68,7 +69,7 @@ strong {
 
 p{
   text-align: left;
-  font-size: 1.25vw;
+  font-size: 1rem;
   word-wrap: break-word;
   padding: 5vw;
 }
