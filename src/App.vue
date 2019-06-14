@@ -3,7 +3,7 @@
     <header>
         <nav class="fixed-top">
           <a @mouseover="brand_hover=true" @mouseleave="brand_hover=false">
-           <router-link to='/'>
+           <router-link to='/' exact>
            <img v-show="!brand_hover" style="vertical-align: middle; width:1.75rem;height:1.75rem;" v-bind:src="brand_image"/>
            <img v-show="brand_hover" style="vertical-align: middle; width:1.75rem;height:1.75rem;" v-bind:src="brand_image_on_hover"/>
            <strong> Home </strong> 
@@ -106,11 +106,16 @@ a:hover{
   text-decoration: none;
 }
 
-a:active{
+
+.router-link-active{
   color: #D84F4E ! important;
   text-decoration: underline;
 }
 
+.active{
+  color: #D84F4E ! important;
+  text-decoration: underline;
+}
 #app {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   -webkit-font-smoothing: antialiased;
