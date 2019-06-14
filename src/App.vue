@@ -5,16 +5,16 @@
           <a @mouseover="brand_hover=true" @mouseleave="brand_hover=false">
            <router-link to='/' exact>
            <img v-show="!brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image"/>
-           <img v-show="brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image_on_hover"/>
-           <strong> Home </strong> 
+           <img v-show="brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image_on_hover"/>&nbsp;
+           <strong> Home </strong>&nbsp;
            </router-link>
           </a>
-          <a href="https://github.com/marvinh/"> <strong> Github </strong> </a>
-          <a href="https://www.linkedin.com/in/marvinhar/"> <strong> LinkedIn </strong> </a> 
-          <a> <router-link to='/projects'> <strong> Projects </strong> </router-link> </a> 
-          <a> <router-link to='/blog'>  <strong> Blog </strong> </router-link> </a> 
-          <a> <router-link to='/thesis'> <strong> Thesis </strong> </router-link> </a>
-          <a> <router-link to='/contact'> <strong> Contact </strong> </router-link> </a> 
+          <a href="https://github.com/marvinh/"> <strong> Github </strong> </a>&nbsp;
+          <a href="https://www.linkedin.com/in/marvinhar/"> <strong> LinkedIn </strong> </a>&nbsp;
+          <a> <router-link to='/projects'> <strong> Projects </strong> </router-link> </a>&nbsp;
+          <a> <router-link to='/blog'>  <strong> Blog </strong> </router-link> </a>&nbsp;
+          <a> <router-link to='/thesis'> <strong> Thesis </strong> </router-link> </a>&nbsp;
+          <a> <router-link to='/contact'> <strong> Contact </strong> </router-link> </a>&nbsp;
         </nav>
     </header>
      <router-view></router-view> 
@@ -22,21 +22,23 @@
         <nav class="fixed-bottom">
           <ul class="ul-alt">
           <li>
-            <a @mouseover="brand_hover=true" @mouseleave="brand_hover=false" href="https://marvinh.github.io/portfolio/" class="nav-item-alt"> 
+            <a @mouseover="brand_hover=true" @mouseleave="brand_hover=false" class="nav-item-alt"> 
+              <router-link to='/home'>
               <figure>
                 <strong> Marvin Harootoonyan, Software Engineer </strong>
                 <img  v-show="!brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image"/>
-                <img  v-show="brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image_on_hover"/>
-                <font-awesome-icon icon="desktop"/>
+                <img  v-show="brand_hover" style="vertical-align: middle; width:1.33em;height:1.33em;" v-bind:src="brand_image_on_hover"/>&nbsp;
+                <font-awesome-icon icon="desktop"/>&nbsp;
               </figure> 
+              </router-link>
             </a>
           </li>
           <li>
             <a class="nav-item-alt" href="https://www.csun.edu/engineering-computer-science/computer-science/bachelor-science-degree-computer-science">
             <figure>
-                <strong class="nav-item-alt"> B.S. in Computer Science </strong>
-                <img style="vertical-align: middle;width:1.33em;height:1.33em;" src="./assets/Csun-seal.svg"/>  &nbsp;&nbsp;
-                <font-awesome-icon style="color: green" icon="check"/>
+                <strong class="nav-item-alt"> B.S. in Computer Science </strong>&nbsp;
+                <img style="vertical-align: middle;width:1.33em;height:1.33em;" src="./assets/Csun-seal.svg"/>&nbsp;
+                <font-awesome-icon style="color: green" icon="check"/>&nbsp;
                 <strong style="color:green" class="nav-item-alt"> Complete </strong>  
             </figure> 
             </a>
@@ -44,10 +46,10 @@
           <li>
             <a  href="https://catalog.csun.edu/academics/comp/programs/ms-computer-science/">
             <figure>
-              <strong > M.S. in Computer Science </strong>
-              <img style="vertical-align: middle;width:1.33em;height:1.33em;" src="./assets/Csun-seal.svg"/> &nbsp;
-              <font-awesome-icon style="color: #D84F4E" class="rotating" icon="spinner"/> &nbsp;
-              <strong style="color:#D84F4E"  class="nav-item-alt"> In Progress </strong>  
+              <strong > M.S. in Computer Science </strong>&nbsp;
+              <img style="vertical-align: middle;width:1.33em;height:1.33em;" src="./assets/Csun-seal.svg"/>&nbsp;
+              <font-awesome-icon style="color: #D84F4E" class="rotating" icon="spinner"/>&nbsp;
+              <strong style="color:#D84F4E"  class="nav-item-alt">In Progress</strong>
             </figure>
             </a>
           </li>
