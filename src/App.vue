@@ -20,7 +20,7 @@
      <router-view></router-view> 
     <footer>
         <nav class="fixed-bottom">
-          <ul class="ul-alt">
+          <ul style="border: 0px solid ! important"class="ul-alt">
           <li>
             <a @mouseover="brand_hover=true" @mouseleave="brand_hover=false" class="nav-item-alt"> 
               <router-link to='/home'>
